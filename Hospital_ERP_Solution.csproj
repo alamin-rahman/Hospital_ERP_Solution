@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2409431D-326C-4CB6-BDEA-E97F093880D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hospital_ERP_Solution</RootNamespace>
+    <AssemblyName>Hospital_ERP_Solution</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Hospital_ERP_Solution, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <ExecutableExtension>.exe</ExecutableExtension>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounting\GetData\FrmShowLedgerUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\GetData\FrmShowLedgerUI.Designer.cs">
+      <DependentUpon>FrmShowLedgerUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\Master\FrmGroupUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\Master\FrmGroupUI.Designer.cs">
+      <DependentUpon>FrmGroupUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\Master\FrmLedgerMasterUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\Master\FrmLedgerMasterUI.Designer.cs">
+      <DependentUpon>FrmLedgerMasterUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\Vouchers\FrmContraVch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\Vouchers\FrmContraVch.Designer.cs">
+      <DependentUpon>FrmContraVch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\Vouchers\FrmJournalVch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\Vouchers\FrmJournalVch.Designer.cs">
+      <DependentUpon>FrmJournalVch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\Vouchers\FrmPaymentVch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\Vouchers\FrmPaymentVch.Designer.cs">
+      <DependentUpon>FrmPaymentVch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accounting\Vouchers\FrmReceiveVch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounting\Vouchers\FrmReceiveVch.Designer.cs">
+      <DependentUpon>FrmReceiveVch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorInfoEntries\FrmDoctorInfoEntryUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorInfoEntries\FrmDoctorInfoEntryUI.Designer.cs">
+      <DependentUpon>FrmDoctorInfoEntryUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicFields\FrmDepartmentAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicFields\FrmDepartmentAdd.Designer.cs">
+      <DependentUpon>FrmDepartmentAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicFields\FrmDesignationAddUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicFields\FrmDesignationAddUI.Designer.cs">
+      <DependentUpon>FrmDesignationAddUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicFields\FrmRoomTypeUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicFields\FrmRoomTypeUI.Designer.cs">
+      <DependentUpon>FrmRoomTypeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicFields\FrmShowDynamicFields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicFields\FrmShowDynamicFields.Designer.cs">
+      <DependentUpon>FrmShowDynamicFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicFields\FrmSpecialistUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicFields\FrmSpecialistUI.Designer.cs">
+      <DependentUpon>FrmSpecialistUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicFields\FrmTestCategoryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicFields\FrmTestCategoryAdd.Designer.cs">
+      <DependentUpon>FrmTestCategoryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalERP.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalERP.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalERP1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalERP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital_ERP_SolutionDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hospital_ERP_SolutionDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital_ERP_SolutionDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hospital_ERP_SolutionDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lab\FrmBillingUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab\FrmBillingUI.Designer.cs">
+      <DependentUpon>FrmBillingUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab\FrmDoctorPercentageUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab\FrmDoctorPercentageUI.Designer.cs">
+      <DependentUpon>FrmDoctorPercentageUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab\FrmDueCollectionUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab\FrmDueCollectionUI.Designer.cs">
+      <DependentUpon>FrmDueCollectionUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab\FrmTestEntryUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab\FrmTestEntryUI.Designer.cs">
+      <DependentUpon>FrmTestEntryUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab\InvoiceReprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab\InvoiceReprint.Designer.cs">
+      <DependentUpon>InvoiceReprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab\LabMasterPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab\LabMasterPage.Designer.cs">
+      <DependentUpon>LabMasterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Non-Printable_Report\FrmNonPrintableReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non-Printable_Report\FrmNonPrintableReport.Designer.cs">
+      <DependentUpon>FrmNonPrintableReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Non-Printable_Report\ShowCashStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non-Printable_Report\ShowCashStatement.Designer.cs">
+      <DependentUpon>ShowCashStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Non-Printable_Report\ShowDoctorStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non-Printable_Report\ShowDoctorStatement.Designer.cs">
+      <DependentUpon>ShowDoctorStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Non-Printable_Report\ShowInvoiceStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non-Printable_Report\ShowInvoiceStatement.Designer.cs">
+      <DependentUpon>ShowInvoiceStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Non-Printable_Report\ShowIssueTestStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Non-Printable_Report\ShowIssueTestStatement.Designer.cs">
+      <DependentUpon>ShowIssueTestStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\ReportIssueTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportIssueTest.Designer.cs">
+      <DependentUpon>ReportIssueTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptInvoice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInvoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Accounting\GetData\FrmShowLedgerUI.resx">
+      <DependentUpon>FrmShowLedgerUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\Master\FrmGroupUI.resx">
+      <DependentUpon>FrmGroupUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\Master\FrmLedgerMasterUI.resx">
+      <DependentUpon>FrmLedgerMasterUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\Vouchers\FrmContraVch.resx">
+      <DependentUpon>FrmContraVch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\Vouchers\FrmJournalVch.resx">
+      <DependentUpon>FrmJournalVch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\Vouchers\FrmPaymentVch.resx">
+      <DependentUpon>FrmPaymentVch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accounting\Vouchers\FrmReceiveVch.resx">
+      <DependentUpon>FrmReceiveVch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorInfoEntries\FrmDoctorInfoEntryUI.resx">
+      <DependentUpon>FrmDoctorInfoEntryUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DynamicFields\FrmDepartmentAdd.resx">
+      <DependentUpon>FrmDepartmentAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DynamicFields\FrmDesignationAddUI.resx">
+      <DependentUpon>FrmDesignationAddUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DynamicFields\FrmRoomTypeUI.resx">
+      <DependentUpon>FrmRoomTypeUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DynamicFields\FrmShowDynamicFields.resx">
+      <DependentUpon>FrmShowDynamicFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DynamicFields\FrmSpecialistUI.resx">
+      <DependentUpon>FrmSpecialistUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DynamicFields\FrmTestCategoryAdd.resx">
+      <DependentUpon>FrmTestCategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab\InvoiceReprint.resx">
+      <DependentUpon>InvoiceReprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non-Printable_Report\FrmNonPrintableReport.resx">
+      <DependentUpon>FrmNonPrintableReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non-Printable_Report\ShowCashStatement.resx">
+      <DependentUpon>ShowCashStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non-Printable_Report\ShowDoctorStatement.resx">
+      <DependentUpon>ShowDoctorStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non-Printable_Report\ShowInvoiceStatement.resx">
+      <DependentUpon>ShowInvoiceStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Non-Printable_Report\ShowIssueTestStatement.resx">
+      <DependentUpon>ShowIssueTestStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportIssueTest.resx">
+      <DependentUpon>ReportIssueTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptInvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInvoice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="HospitalERP.dbml.layout">
+      <DependentUpon>HospitalERP.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Lab\FrmBillingUI.resx">
+      <DependentUpon>FrmBillingUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab\FrmDoctorPercentageUI.resx">
+      <DependentUpon>FrmDoctorPercentageUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab\FrmDueCollectionUI.resx">
+      <DependentUpon>FrmDueCollectionUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab\FrmTestEntryUI.resx">
+      <DependentUpon>FrmTestEntryUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab\LabMasterPage.resx">
+      <DependentUpon>LabMasterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="HospitalERP.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>HospitalERP.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HospitalERP.xsc">
+      <DependentUpon>HospitalERP.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalERP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HospitalERP1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HospitalERP.xss">
+      <DependentUpon>HospitalERP.xsd</DependentUpon>
+    </None>
+    <None Include="Hospital_ERP_SolutionDataSet11.xsc">
+      <DependentUpon>Hospital_ERP_SolutionDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Hospital_ERP_SolutionDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hospital_ERP_SolutionDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hospital_ERP_SolutionDataSet11.xss">
+      <DependentUpon>Hospital_ERP_SolutionDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Hospital_ERP_SolutionDataSet3.xsc">
+      <DependentUpon>Hospital_ERP_SolutionDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Hospital_ERP_SolutionDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hospital_ERP_SolutionDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hospital_ERP_SolutionDataSet3.xss">
+      <DependentUpon>Hospital_ERP_SolutionDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People-Doctor-Male-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

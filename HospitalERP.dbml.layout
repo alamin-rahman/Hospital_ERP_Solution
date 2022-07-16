@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 15.625" name="HospitalERP">
+  <DataContextMoniker Name="/HospitalERPDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8476d7d9-18c0-48eb-b895-6d503af935f8" isExpanded="false" absoluteBounds="0.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce360695-901c-4d1d-9861-b4391f85ea6c" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="03a24336-fda6-405d-84e3-8e80414724df" isExpanded="false" absoluteBounds="0.5, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_AddDepartment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d359783-a004-4a92-9285-151a2e039647" absoluteBounds="0.51500000000000012, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7b948b5e-12ad-4ce0-91bf-31c9365d9e36" isExpanded="false" absoluteBounds="0.5, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_RoomType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dacbb9e4-2463-48cf-a1e0-2466e8c9f48e" absoluteBounds="0.51499999999999968, 2.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0a998c50-a8ab-4a12-a530-e9a1a21dee8f" isExpanded="false" absoluteBounds="2.625, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_Specialist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6979dd23-363d-4d9d-baad-9ed9aa6cc47c" absoluteBounds="2.6399999999999997, 2.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ce9c9a60-5f68-45fb-b6a5-caea643f04dd" isExpanded="false" absoluteBounds="2.625, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_PermanentDoctorInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e4172816-76fa-441c-807a-a3b8acef01ba" absoluteBounds="2.64, 1.585, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="940e84a7-0456-42cd-8c74-04a2a1155721" isExpanded="false" absoluteBounds="5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_GuestDoctorInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="70a7981a-a4c2-46dc-b247-286180ab82b7" absoluteBounds="5.015, 0.96, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="053313a8-3a72-44f6-84e3-bc993c2ea27b" isExpanded="false" absoluteBounds="0.5, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_Designation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0cb8f2d-b014-47b2-af57-c220f1c3cf76" absoluteBounds="0.51500000000000012, 2.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ae2f572-452f-4141-bebe-8f813b0de8d5" isExpanded="false" absoluteBounds="5, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_IssueTest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5cbe147b-33e9-41c8-8fb1-b4fd84336238" absoluteBounds="5.015, 1.5850000000000009, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="341db07a-ea18-4ac6-a62c-8ac520bb2a0c" isExpanded="false" absoluteBounds="2.625, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_LabTestEntry" />
+      <nestedChildShapes>
+        <elementListCompartment Id="272c2799-8a23-467e-95a0-185db7190464" absoluteBounds="2.64, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fa805453-6e93-4f0f-bbc1-7b98e8d8f8f2" isExpanded="false" absoluteBounds="5, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_invoice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e26cff48-4611-459b-9be0-a2a376902da8" absoluteBounds="5.015, 2.2100000000000009, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f011a116-e61c-45e5-b78c-76d522a8da32" absoluteBounds="4.125, 12.25, 2, 3.1170068359375">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_LedgerAmount" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7ae7d7aa-6601-4ee3-ac19-aabc2244c149" absoluteBounds="4.14, 12.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e830393-0e3c-43e6-b057-b4e422e6400b" isExpanded="false" absoluteBounds="2.625, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_DoctorPercentage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4cc3452c-af40-4afd-ac79-7ce60313b09b" absoluteBounds="2.6399999999999997, 2.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c99bb4bf-5e74-4d29-9ab7-76f58eeb484a" isExpanded="false" absoluteBounds="0.5, 3.125, 2, 0.45">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_DueCollection" />
+      <nestedChildShapes>
+        <elementListCompartment Id="08d51942-eb4c-4d52-bafb-2baffbf72282" absoluteBounds="0.51500000000000012, 3.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c2c94dfb-5099-4088-a993-6394f13f4d6a" isExpanded="false" absoluteBounds="4.75, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/HospitalERPDataContext/tbl_Cash" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07600b80-cb59-4d91-a71b-78ccc68d3d38" absoluteBounds="4.765, 2.835, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
